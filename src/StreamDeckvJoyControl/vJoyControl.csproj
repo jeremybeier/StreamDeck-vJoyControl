@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>com.randombehavior.vjoycontrol</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net471</TargetFramework>
+    <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StreamDeck-Tools" Version="2.8.0" />
+    <PackageReference Include="vJoyInterface" Version="0.2.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="manifest.json" CopyToOutputDirectory="PreserveNewest"/>
+    <None Include="Images\**" CopyToOutputDirectory="PreserveNewest" LinkBase="Images\" />
+    <None Include="PropertyInspector\**" CopyToOutputDirectory="PreserveNewest" LinkBase="PropertyInspector\" />
+  </ItemGroup>
+
+</Project>

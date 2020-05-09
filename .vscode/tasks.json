@@ -1,0 +1,79 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                // Ask dotnet build to generate full paths for file names.
+                "/property:GenerateFullPaths=true",
+                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+                "/consoleloggerparameters:NoSummary",
+                "-o",
+                "src/StreamDeckvJoyControl/bin/Debug/com.randombehavior.vjoycontrol.sdplugin",
+                "src/StreamDeckvJoyControl",
+                "-r",
+                "win-x64"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "install",
+            "command": "./utils/install.bat",
+            "type": "shell",
+            "args": [
+                "../src/StreamDeckvJoyControl/bin/Debug",
+                "com.randombehavior.vjoycontrol"
+            ]
+        },
+        {
+            "label": "build and install",
+            "dependsOn": [
+                "build",
+                "install"
+            ],
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "build Release",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                // Ask dotnet build to generate full paths for file names.
+                "/property:GenerateFullPaths=true",
+                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+                "/consoleloggerparameters:NoSummary",
+                "-c",
+                "RELEASE",
+                "-o",
+                "src/StreamDeckvJoyControl/bin/Release/com.randombehavior.vjoycontrol.sdplugin",
+                "src/StreamDeckvJoyControl",
+                "-r",
+                "win-x64"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "install Release",
+            "command": "./utils/install.bat",
+            "type": "shell",
+            "args": [
+                "../src/StreamDeckvJoyControl/bin/Release",
+                "com.randombehavior.vjoycontrol"
+            ]
+        },
+        {
+            "label": "build and install Release",
+            "dependsOn": [
+                "build Release",
+                "install Release"
+            ],
+            "dependsOrder": "sequence"
+        }
+    ]
+}

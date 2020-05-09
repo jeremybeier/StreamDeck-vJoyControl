@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Attach",
+            "type": "clr",
+            "request": "attach",
+            "processName": "com.randombehavior.vjoycontrol.exe"
+        }
+    ]
+}

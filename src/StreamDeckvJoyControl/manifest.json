@@ -1,0 +1,38 @@
+{
+    "Actions": [
+        {
+            "Icon": "Images/actionImage",
+            "Name": "vJoy button control",
+            "States": [
+                {
+                    "Image": "Images/base",
+                    "TitleAlignment": "middle",
+                    "FontSize": "12"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "controls state of a virtual joystick button",
+            "UUID": "com.randombehavior.vjoycontrol.buttoncontrol.streamdeckplugin",
+            "PropertyInspectorPath": "PropertyInspector/settings.html"
+        }
+    ],
+    "Author": "JeremyBeier",
+    "Description": "vJoy control",
+    "Name": "vJoy control",
+    "Icon": "Images/base",
+    "URL": "https://github.com/jeremybeier/StreamDeck-vJoyControl",
+    "Version": "0.1",
+    "CodePath": "com.randombehavior.vjoycontrol",
+    "Category": "vJoy Control",
+    "CategoryIcon": "Images/categoryIcon",
+    "OS": [
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "SDKVersion": 2,
+    "Software": {
+        "MinimumVersion": "4.4.1"
+    }
+}
