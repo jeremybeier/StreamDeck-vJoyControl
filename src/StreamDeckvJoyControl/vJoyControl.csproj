@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>com.randombehavior.vjoycontrol</AssemblyName>
+    <AssemblyName>net.jeremybeier.vjoycontrol</AssemblyName>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.1.74">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="StreamDeck-Tools" Version="2.8.0" />
+    <PackageReference Include="StreamDeck-Tools" Version="3.2.0" />
     <PackageReference Include="vJoyInterface" Version="0.2.1.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="manifest.json" CopyToOutputDirectory="PreserveNewest"/>
+    <None Include="manifest.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="Images\**" CopyToOutputDirectory="PreserveNewest" LinkBase="Images\" />
     <None Include="PropertyInspector\**" CopyToOutputDirectory="PreserveNewest" LinkBase="PropertyInspector\" />
   </ItemGroup>

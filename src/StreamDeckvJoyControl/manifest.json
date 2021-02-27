@@ -12,7 +12,7 @@
             ],
             "SupportedInMultiActions": false,
             "Tooltip": "controls state of a virtual joystick button",
-            "UUID": "com.randombehavior.vjoycontrol.buttoncontrol.streamdeckplugin",
+            "UUID": "net.jeremybeier.vjoycontrol.buttoncontrol.streamdeckplugin",
             "PropertyInspectorPath": "PropertyInspector/settings.html"
         }
     ],
@@ -22,7 +22,7 @@
     "Icon": "Images/base",
     "URL": "https://github.com/jeremybeier/StreamDeck-vJoyControl",
     "Version": "0.1",
-    "CodePath": "com.randombehavior.vjoycontrol",
+    "CodePath": "net.jeremybeier.vjoycontrol",
     "Category": "vJoy Control",
     "CategoryIcon": "Images/categoryIcon",
     "OS": [

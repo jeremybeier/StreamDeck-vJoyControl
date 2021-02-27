@@ -5,7 +5,7 @@
             "name": ".NET Attach",
             "type": "clr",
             "request": "attach",
-            "processName": "com.randombehavior.vjoycontrol.exe"
+            "processName": "net.jeremybeier.vjoycontrol.exe"
         }
     ]
 }

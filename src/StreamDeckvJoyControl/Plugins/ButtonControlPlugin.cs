@@ -4,7 +4,7 @@ using BarRaider.SdTools;
 
 namespace VJoyControl
 {
-    [PluginActionId("com.randombehavior.vjoycontrol.buttoncontrol.streamdeckplugin")]
+    [PluginActionId("net.jeremybeier.vjoycontrol.buttoncontrol.streamdeckplugin")]
     class ButtonControlPlugin : VJoyPluginBase
     {
         public ButtonControlPlugin(SDConnection connection, InitialPayload payload) : base(connection, payload) { }

@@ -12,7 +12,7 @@
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary",
                 "-o",
-                "src/StreamDeckvJoyControl/bin/Debug/com.randombehavior.vjoycontrol.sdplugin",
+                "src/StreamDeckvJoyControl/bin/Debug/net.jeremybeier.vjoycontrol.sdplugin",
                 "src/StreamDeckvJoyControl",
                 "-r",
                 "win-x64"
@@ -26,7 +26,7 @@
             "type": "shell",
             "args": [
                 "../src/StreamDeckvJoyControl/bin/Debug",
-                "com.randombehavior.vjoycontrol"
+                "net.jeremybeier.vjoycontrol"
             ]
         },
         {
@@ -50,7 +50,7 @@
                 "-c",
                 "RELEASE",
                 "-o",
-                "src/StreamDeckvJoyControl/bin/Release/com.randombehavior.vjoycontrol.sdplugin",
+                "src/StreamDeckvJoyControl/bin/Release/net.jeremybeier.vjoycontrol.sdplugin",
                 "src/StreamDeckvJoyControl",
                 "-r",
                 "win-x64"
@@ -64,7 +64,7 @@
             "type": "shell",
             "args": [
                 "../src/StreamDeckvJoyControl/bin/Release",
-                "com.randombehavior.vjoycontrol"
+                "net.jeremybeier.vjoycontrol"
             ]
         },
         {
